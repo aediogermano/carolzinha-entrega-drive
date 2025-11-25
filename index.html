@@ -69,19 +69,18 @@
           value: 10.00,
           currency: 'BRL',
           content_ids: ['conteudo1'],
-          content_type: 'product'
+          content_type: 'product',
+          num_items: 1
         });
 
-        // Espera 2 segundos para garantir envio do pixel antes de marcar localStorage
         setTimeout(() => {
           localStorage.setItem('purchaseTracked', 'true');
         }, 2000);
       }
 
-      // Redireciona após 10 segundos para dar tempo de disparar evento
       setTimeout(() => {
         window.location.href = "https://drive.google.com/drive/folders/1aWK8vBms4MAfrO1qEiT0_5h9OUNBMwkE?usp=sharing";
-      }, 10000);
+      }, 7000);
     });
   </script>
 </head>
@@ -91,4 +90,3 @@
   <p>Liberando agora os meus conteúdos para você amor...</p>
 </body>
 </html>
-
